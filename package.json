@@ -1,0 +1,33 @@
+{
+    "name": "plain-ui.css",
+    "version": "1.0.0",
+    "description": "Simple CSS Framework",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "plain",
+        "simple",
+        "css",
+        "ui",
+        "framework"
+    ],
+    "author": "Ilya D.",
+    "license": "ISC",
+    "dependencies": {
+        "gh-pages": "^2.1.1",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-clean-css": "^4.2.0",
+        "gulp-rename": "^1.4.0"
+    },
+    "browserslist": [
+        "last 2 version",
+        "Firefox >=3.5",
+        "Safari >=3.2",
+        "Opera >=11",
+        "OperaMini All",
+        "IE >= 9"
+    ]
+}
