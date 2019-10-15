@@ -189,6 +189,19 @@ pre {
     overflow: auto;
 }
 
+.pre-grid {
+    margin-bottom: 75px;
+}
+
+.pre-buttons {
+    margin-bottom: 35px;
+    margin-top: 0;
+}
+
+section#buttons .pre-buttons:last-child {
+    margin-bottom: 75px;
+}
+
 code {
     white-space: pre;
     font-family: monospace, monospace;
@@ -228,6 +241,9 @@ code .code.pun:last-child {
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 }
 
 .tabs a {
@@ -256,4 +272,13 @@ code .code.pun:last-child {
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
             border-radius: 4px;
+}
+
+.btn-tag {
+    font-family: monospace, monospace;
+    background-color: #bfffbf;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    padding: 2px 7px;
 }

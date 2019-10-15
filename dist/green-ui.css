@@ -1,7 +1,7 @@
 /*
 * Author: Ilya D.
 * License: MIT License
-* Website: http://ilyadzh.github.io/green-ui.css
+* Website: http://ilyadzh.github.io/plain-ui.css
 */
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i");
@@ -118,23 +118,23 @@ h6 {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 40px;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 32px;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 28px;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h6 {
@@ -151,7 +151,7 @@ h6 {
 }
 
 .pl-container-small {
-    max-width: 768px !important;
+    max-width: 900px !important;
 }
 
 @media (min-width: 576px) {
@@ -872,7 +872,7 @@ h6 {
 
 .pl-button {
     padding: 12px 18px;
-    font-size: 14px;
+    font-size: 16px;
     display: inline-block;
     text-align: center;
     line-height: 1;
@@ -894,24 +894,24 @@ h6 {
     -moz-transition-property: background-color, color;
     transition-property: background-color, color;
     background-color: transparent;
-    color: #333;
-    border: 1px solid #333;
+    color: #27ae60;
+    border: 1px solid #27ae60;
 }
 
 .pl-button:hover {
-    background-color: #333;
+    background-color: #27ae60;
     color: #fff;
 }
 
 .pl-button.full {
-    background-color: #333;
+    background-color: #27ae60;
     color: #fff;
-    border: 1px solid #333;
+    border: 1px solid #27ae60;
 }
 
 .pl-button.full:hover {
     background-color: transparent;
-    color: #333;
+    color: #27ae60;
 }
 
 .pl-button.gray {
@@ -958,26 +958,26 @@ h6 {
     color: #3498db;
 }
 
-.pl-button.success {
+.pl-button.black {
     background-color: transparent;
-    color: #27ae60;
-    border: 1px solid #27ae60;
+    color: #333;
+    border: 1px solid #333;
 }
 
-.pl-button.success:hover {
-    background-color: #27ae60;
+.pl-button.black:hover {
+    background-color: #333;
     color: #fff;
 }
 
-.pl-button.success.full {
-    background-color: #27ae60;
+.pl-button.black.full {
+    background-color: #333;
     color: #fff;
-    border: 1px solid #27ae60;
+    border: 1px solid #333;
 }
 
-.pl-button.success.full:hover {
+.pl-button.black.full:hover {
     background-color: transparent;
-    color: #27ae60;
+    color: #333;
 }
 
 .pl-button.warning {
@@ -1024,30 +1024,67 @@ h6 {
     color: #e74c3c;
 }
 
-.pl-button.pink {
+.pl-button.purple {
     background-color: transparent;
-    color: #ff4081;
-    border: 1px solid #ff4081;
+    color: #9b27af;
+    border: 1px solid #9b27af;
 }
 
-.pl-button.pink:hover {
-    background-color: #ff4081;
+.pl-button.purple:hover {
+    background-color: #9b27af;
     color: #fff;
 }
 
-.pl-button.pink.full {
-    background-color: #ff4081;
+.pl-button.purple.full {
+    background-color: #9b27af;
     color: #fff;
-    border: 1px solid #ff4081;
+    border: 1px solid #9b27af;
 }
 
-.pl-button.pink.full:hover {
+.pl-button.purple.full:hover {
     background-color: transparent;
-    color: #ff4081;
+    color: #9b27af;
+}
+
+.pl-button.orange {
+    background-color: transparent;
+    color: #fe5722;
+    border: 1px solid #fe5722;
+}
+
+.pl-button.orange:hover {
+    background-color: #fe5722;
+    color: #fff;
+}
+
+.pl-button.orange.full {
+    background-color: #fe5722;
+    color: #fff;
+    border: 1px solid #fe5722;
+}
+
+.pl-button.orange.full:hover {
+    background-color: transparent;
+    color: #fe5722;
+}
+
+.pl-button.link {
+    color: #27ae60;
+    background-color: transparent;
+    background: 0 0;
+    border: none;
+    -webkit-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+.pl-button.link:hover {
+    color: #333;
 }
 
 .pl-button.disabled {
-    opacity: .65;
+    opacity: .5;
     pointer-events: none;
 }
 
@@ -1062,8 +1099,43 @@ h6 {
 }
 
 .pl-button.expanded {
+    width: 100%;
     display: block;
     max-width: 100%;
+}
+
+.pl-button.loading {
+    color: transparent !important;
+    pointer-events: none;
+    position: relative;
+}
+
+.pl-button.loading::after {
+    -webkit-animation: loading .5s infinite linear;
+       -moz-animation: loading .5s infinite linear;
+         -o-animation: loading .5s infinite linear;
+            animation: loading .5s infinite linear;
+    border: .15rem solid #27ae60;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: "";
+    display: block;
+    height: 1rem;
+    left: 50%;
+    margin-left: -.5rem;
+    margin-top: -.5rem;
+    position: absolute;
+    top: 50%;
+    width: 1rem;
+    z-index: 1;
+}
+
+.pl-button.full.loading::after {
+    border-bottom-color: #fff;
+    border-left-color: #fff;
 }
 
 .text-left {
@@ -1129,4 +1201,56 @@ h6 {
        -moz-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+}
+
+@-webkit-keyframes loading {
+    0% {
+        -webkit-transform: rotate(0);
+                transform: rotate(0)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes loading {
+    0% {
+        -moz-transform: rotate(0);
+             transform: rotate(0)
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+             transform: rotate(360deg)
+    }
+}
+
+@-o-keyframes loading {
+    0% {
+        -o-transform: rotate(0);
+           transform: rotate(0)
+    }
+
+    100% {
+        -o-transform: rotate(360deg);
+           transform: rotate(360deg)
+    }
+}
+
+@keyframes loading {
+    0% {
+        -webkit-transform: rotate(0);
+           -moz-transform: rotate(0);
+             -o-transform: rotate(0);
+                transform: rotate(0)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+           -moz-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg)
+    }
 }

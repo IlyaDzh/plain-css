@@ -147,6 +147,19 @@ pre {
     overflow: auto;
 }
 
+.pre-grid {
+    margin-bottom: 75px;
+}
+
+.pre-buttons {
+    margin-bottom: 35px;
+    margin-top: 0;
+}
+
+section#buttons .pre-buttons:last-child {
+    margin-bottom: 75px;
+}
+
 code {
     white-space: pre;
     font-family: monospace, monospace;
@@ -182,6 +195,7 @@ code .code.pun:last-child {
 
 .tabs {
     display: flex;
+    justify-content: space-around;
 }
 
 .tabs a {
@@ -208,4 +222,11 @@ code .code.pun:last-child {
     text-align: center;
     line-height: 3em;
     border-radius: 4px;
+}
+
+.btn-tag {
+    font-family: monospace, monospace;
+    background-color: #bfffbf;
+    border-radius: 4px;
+    padding: 2px 7px;
 }
