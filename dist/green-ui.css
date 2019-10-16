@@ -6,9 +6,21 @@
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i");
 
+:root {
+    --green: #27ae60;
+    --blue: #3498db;
+    --yellow: #f7af15;
+    --red: #e74c3c;
+    --orange: #fe5722;
+    --purple: #9b27af;
+    --gray: #747681;
+    --black: #333;
+    --font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
 * {
-    font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    font-weight: lighter;
+    font-family: var(--font-family);
+    font-weight: 300;
     line-height: 1.5;
     color: #444;
 }
@@ -30,14 +42,6 @@ body {
     padding: 0;
 }
 
-
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: solid #ccc;
-    border-width: 1px 0 0;
-}
-
 a {
     color: #27ae60;
     -webkit-transition: .2s ease-out;
@@ -56,15 +60,13 @@ a:focus {
     color: #333;
 }
 
-textarea:focus,
-input:focus,
 button {
     outline: none;
 }
 
 label {
     display: block;
-    margin-bottom: .5rem;
+    margin-bottom: 4px;
 }
 
 input[type="text"],
@@ -76,12 +78,11 @@ input[type="number"],
 input[type="tel"],
 input[type="time"],
 input[type="url"],
-input[type="color"],
 select,
 textarea {
-    font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-family: var(--font-family);
     background-color: #fff;
-    border: 1px solid #333;
+    border: 1px solid rgba(51, 51, 51, 0.8);
     color: #333;
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
@@ -89,7 +90,7 @@ textarea {
     display: block;
     font-size: 16px;
     line-height: 1;
-    height: 46px;
+    height: 40px;
     margin: 0 0 10px;
     padding: 0 10px;
     width: 100%;
@@ -98,9 +99,16 @@ textarea {
 textarea {
     resize: none;
     font-size: 16px;
-    min-height: 150px;
+    min-height: 142px;
     padding: 10px;
     line-height: 1.5;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid #1bad58;
+    outline: none;
 }
 
 h1,
@@ -111,10 +119,7 @@ h5,
 h6 {
     margin: 10px 0;
     font-weight: normal;
-    font-style: normal;
     line-height: 1.2;
-    text-transform: none;
-    text-rendering: optimizeLegibility;
 }
 
 h1 {
@@ -894,182 +899,182 @@ h6 {
     -moz-transition-property: background-color, color;
     transition-property: background-color, color;
     background-color: transparent;
-    color: #27ae60;
-    border: 1px solid #27ae60;
+    color: var(--green);
+    border: 1px solid var(--green);
 }
 
 .pl-button:hover {
-    background-color: #27ae60;
+    background-color: var(--green);
     color: #fff;
 }
 
 .pl-button.full {
-    background-color: #27ae60;
+    background-color: var(--green);
     color: #fff;
-    border: 1px solid #27ae60;
+    border: 1px solid var(--green);
 }
 
 .pl-button.full:hover {
     background-color: transparent;
-    color: #27ae60;
+    color: var(--green);
 }
 
 .pl-button.gray {
     background-color: transparent;
-    color: #747681;
-    border: 1px solid #747681;
+    color: var(--gray);
+    border: 1px solid var(--gray);
 }
 
 .pl-button.gray:hover {
-    background-color: #747681;
+    background-color: var(--gray);
     color: #fff;
 }
 
 .pl-button.gray.full {
-    background-color: #747681;
+    background-color: var(--gray);
     color: #fff;
-    border: 1px solid #747681;
+    border: 1px solid var(--gray);
 }
 
 .pl-button.gray.full:hover {
     background-color: transparent;
-    color: #747681;
+    color: var(--gray);
 }
 
-.pl-button.primary {
+.pl-button.blue {
     background-color: transparent;
-    color: #3498db;
-    border: 1px solid #3498db;
+    color: var(--blue);
+    border: 1px solid var(--blue);
 }
 
-.pl-button.primary:hover {
-    background-color: #3498db;
+.pl-button.blue:hover {
+    background-color: var(--blue);
     color: #fff;
 }
 
-.pl-button.primary.full {
-    background-color: #3498db;
+.pl-button.blue.full {
+    background-color: var(--blue);
     color: #fff;
-    border: 1px solid #3498db;
+    border: 1px solid var(--blue);
 }
 
-.pl-button.primary.full:hover {
+.pl-button.blue.full:hover {
     background-color: transparent;
-    color: #3498db;
+    color: var(--blue);
 }
 
 .pl-button.black {
     background-color: transparent;
-    color: #333;
-    border: 1px solid #333;
+    color: var(--black);
+    border: 1px solid var(--black);
 }
 
 .pl-button.black:hover {
-    background-color: #333;
+    background-color: var(--black);
     color: #fff;
 }
 
 .pl-button.black.full {
-    background-color: #333;
+    background-color: var(--black);
     color: #fff;
-    border: 1px solid #333;
+    border: 1px solid var(--black);
 }
 
 .pl-button.black.full:hover {
     background-color: transparent;
-    color: #333;
+    color: var(--black);
 }
 
-.pl-button.warning {
+.pl-button.yellow {
     background-color: transparent;
-    color: #f39c12;
-    border: 1px solid #f39c12;
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
 }
 
-.pl-button.warning:hover {
-    background-color: #f39c12;
+.pl-button.yellow:hover {
+    background-color: var(--yellow);
     color: #fff;
 }
 
-.pl-button.warning.full {
-    background-color: #f39c12;
+.pl-button.yellow.full {
+    background-color: var(--yellow);
     color: #fff;
-    border: 1px solid #f39c12;
+    border: 1px solid var(--yellow);
 }
 
-.pl-button.warning.full:hover {
+.pl-button.yellow.full:hover {
     background-color: transparent;
-    color: #f39c12;
+    color: var(--yellow);
 }
 
-.pl-button.danger {
+.pl-button.red {
     background-color: transparent;
-    color: #e74c3c;
-    border: 1px solid #e74c3c;
+    color: var(--red);
+    border: 1px solid var(--red);
 }
 
-.pl-button.danger:hover {
-    background-color: #e74c3c;
+.pl-button.red:hover {
+    background-color: var(--red);
     color: #fff;
 }
 
-.pl-button.danger.full {
-    background-color: #e74c3c;
+.pl-button.red.full {
+    background-color: var(--red);
     color: #fff;
-    border: 1px solid #e74c3c;
+    border: 1px solid var(--red);
 }
 
-.pl-button.danger.full:hover {
+.pl-button.red.full:hover {
     background-color: transparent;
-    color: #e74c3c;
+    color: var(--red);
 }
 
 .pl-button.purple {
     background-color: transparent;
-    color: #9b27af;
-    border: 1px solid #9b27af;
+    color: var(--purple);
+    border: 1px solid var(--purple);
 }
 
 .pl-button.purple:hover {
-    background-color: #9b27af;
+    background-color: var(--purple);
     color: #fff;
 }
 
 .pl-button.purple.full {
-    background-color: #9b27af;
+    background-color: var(--purple);
     color: #fff;
-    border: 1px solid #9b27af;
+    border: 1px solid var(--purple);
 }
 
 .pl-button.purple.full:hover {
     background-color: transparent;
-    color: #9b27af;
+    color: var(--purple);
 }
 
 .pl-button.orange {
     background-color: transparent;
-    color: #fe5722;
-    border: 1px solid #fe5722;
+    color: var(--orange);
+    border: 1px solid var(--orange);
 }
 
 .pl-button.orange:hover {
-    background-color: #fe5722;
+    background-color: var(--orange);
     color: #fff;
 }
 
 .pl-button.orange.full {
-    background-color: #fe5722;
+    background-color: var(--orange);
     color: #fff;
-    border: 1px solid #fe5722;
+    border: 1px solid var(--orange);
 }
 
 .pl-button.orange.full:hover {
     background-color: transparent;
-    color: #fe5722;
+    color: var(--orange);
 }
 
 .pl-button.link {
-    color: #27ae60;
+    color: var(--green);
     background-color: transparent;
     background: 0 0;
     border: none;
@@ -1080,7 +1085,7 @@ h6 {
 }
 
 .pl-button.link:hover {
-    color: #333;
+    color: var(--black);
 }
 
 .pl-button.disabled {
@@ -1115,7 +1120,7 @@ h6 {
        -moz-animation: loading .5s infinite linear;
          -o-animation: loading .5s infinite linear;
             animation: loading .5s infinite linear;
-    border: .15rem solid #27ae60;
+    border: .15rem solid var(--green);
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
@@ -1151,7 +1156,7 @@ h6 {
 }
 
 .text-light {
-    font-weight: lighter;
+    font-weight: 300;
 }
 
 .text-bold {
@@ -1160,10 +1165,6 @@ h6 {
 
 .text-uppercase {
     text-transform: uppercase;
-}
-
-.text-lowercase {
-    text-transform: lowercase;
 }
 
 .d-flex {
@@ -1176,11 +1177,6 @@ h6 {
 
 .d-none {
     display: none;
-}
-
-.img-fluid {
-    max-width: 100%;
-    height: auto;
 }
 
 .fixed {
@@ -1201,6 +1197,28 @@ h6 {
        -moz-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+}
+
+.justify-content-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.justify-content-end {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+       -moz-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+.justify-content-around {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 }
 
 @-webkit-keyframes loading {

@@ -1,3 +1,10 @@
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: solid #ccc;
+    border-width: 1px 0 0;
+}
+
 .demo-pd {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -70,12 +77,6 @@
     width: 26px
 }
 
-@media (min-width: 768px) {
-    .mobile-menu-toggle {
-        display: none
-    }
-}
-
 .mobile-menu-toggle:focus,
 .mobile-menu-toggle:hover {
     cursor: pointer
@@ -86,16 +87,23 @@
     top: 0;
     left: 0;
     width: 26px;
-    height: 4px;
+    height: 3px;
     content: '';
     background: #27ae60;
-    border-radius: 4px;
+    border-radius: 3px;
     box-shadow: 0 8px 0 0 #27ae60, 0 16px 0 0 #27ae60
 }
 
 .header {
     height: calc(100% - 50px);
     background-color: #f4f5f6;
+    min-height: 540px;
+}
+
+.footer {
+    background-color: #f4f5f6;
+    min-height: 100px;
+    border-top: 1px solid #d1d1d1;
 }
 
 .header .title {
@@ -107,8 +115,8 @@
     margin-bottom: 25px;
 }
 
-.header .button {
-    margin-top: 20px;
+.header .pl-button {
+    margin-top: 10px;
 }
 
 .header img {
@@ -143,12 +151,14 @@ pre {
     color: #000;
     font-size: 15px;
     white-space: normal;
-    padding: 1em;
+    padding: 0.6em 1em;
     overflow: auto;
 }
 
-.pre-grid {
-    margin-bottom: 75px;
+.pre-grid,
+.pre-typography,
+.pre-forms {
+    margin-bottom: 80px;
 }
 
 .pre-buttons {
@@ -157,7 +167,7 @@ pre {
 }
 
 section#buttons .pre-buttons:last-child {
-    margin-bottom: 75px;
+    margin-bottom: 80px;
 }
 
 code {
@@ -167,10 +177,6 @@ code {
 
 pre span {
     font-family: monospace, monospace;
-}
-
-code .code.pun:last-child {
-    padding-right: 1em;
 }
 
 .code.pun {
@@ -229,4 +235,25 @@ code .code.pun:last-child {
     background-color: #bfffbf;
     border-radius: 4px;
     padding: 2px 7px;
+}
+
+.utilities-list li {
+    margin-bottom: 3px;
+}
+
+@media (min-width: 768px) {
+    .mobile-menu-toggle {
+        display: none
+    }
+}
+
+@media (max-width: 400px) {
+    .tabs {
+        display: block;
+    }
+
+    .tabs a {
+        padding-left: 0;
+        padding-right: 10px;
+    }
 }
