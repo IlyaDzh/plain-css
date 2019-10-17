@@ -1,6 +1,6 @@
 <p align="center"><img src="./img/logo.png" alt="PlainCSS" width="240" height="210" /></p>
-<h2 align="center"><a href="https://ilyadzh.github.io/plain-css">PlainCSS</a></h3>
-<h3 align="center">A minimalist CSS framework</h4>
+<h2 align="center"><a href="https://ilyadzh.github.io/plain-css">PlainCSS</a></h2>
+<h3 align="center">A minimalist CSS framework</h3>
 
 ---
 
