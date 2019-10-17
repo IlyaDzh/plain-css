@@ -1,6 +1,6 @@
 {
-    "name": "plain-ui.css",
-    "version": "1.0.0",
+    "name": "plain.css",
+    "version": "1.0.1",
     "description": "Simple CSS Framework",
     "main": "index.js",
     "scripts": {
