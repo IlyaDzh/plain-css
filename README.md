@@ -1,7 +1,8 @@
-<p align="center"><img src="logo.png" alt="PlainCSS" /></p>
+<p align="center"><img src="./img/logo.png" alt="PlainCSS" width="240" height="210" /></p>
 <h3 align="center"><a href="https://ilyadzh.github.io/plain-css">PlainCSS</a></h3>
-<h5 align="center">A minimalist CSS framework</h5>
-___
+<h4 align="center">A minimalist CSS framework</h4>
+
+---
 
 PlainCSS is a lightweight, responsive and modern CSS framework for faster and extensible development.
 
