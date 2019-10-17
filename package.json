@@ -7,19 +7,19 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
-		"type": "git",
-		"url": "git+https://github.com/IlyaDzh/plain-css.git"
-	},
+        "type": "git",
+        "url": "git+https://github.com/IlyaDzh/plain-css.git"
+    },
     "keywords": [
         "CSS",
-		"CSS-framework",
-		"UI",
+        "CSS-framework",
+        "UI",
         "Plain"
     ],
     "author": "Ilya D.",
     "license": "MIT",
-    "homepage": "https://github.com/IlyaDzh/plain-css#readme",
-    "dependencies": {
+    "homepage": "https://github.com/IlyaDzh",
+    "devDependencies": {
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^7.0.1",
         "gulp-clean-css": "^4.2.0",
