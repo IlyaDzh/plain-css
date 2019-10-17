@@ -1,6 +1,6 @@
 <p align="center"><img src="./img/logo.png" alt="PlainCSS" width="240" height="210" /></p>
-<h3 align="center"><a href="https://ilyadzh.github.io/plain-css">PlainCSS</a></h3>
-<h4 align="center">A minimalist CSS framework</h4>
+<h2 align="center"><a href="https://ilyadzh.github.io/plain-css">PlainCSS</a></h3>
+<h3 align="center">A minimalist CSS framework</h4>
 
 ---
 
@@ -13,6 +13,7 @@ PlainCSS provides basic styles for typography and elements, flexbox based respon
 There are a few different ways you can include [**PlainCSS**](https://ilyadzh.github.io/plain-css) within your project. You can simply download the source file below or use NPM. PlainCSS is also available from CDN.
 
 Source file: [Download](https://raw.githubusercontent.com/IlyaDzh/plain-css/gh-pages/dist/plain.min.css)
+
 Install with NPM:
 ```bash
 npm install plain-css
