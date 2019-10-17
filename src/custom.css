@@ -5,6 +5,10 @@ hr {
     border-width: 1px 0 0;
 }
 
+.pl-button {
+    margin-bottom: 20px;
+}
+
 .logo-name {
     margin: 0;
 }
