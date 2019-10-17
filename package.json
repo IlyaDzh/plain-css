@@ -1,6 +1,6 @@
 {
     "name": "plain-css",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "Simple CSS Framework",
     "main": "dist/plain.min.css",
     "scripts": {

@@ -5,6 +5,10 @@ hr {
     border-width: 1px 0 0;
 }
 
+.logo-name {
+    margin: 0;
+}
+
 .demo-pd {
     padding-top: 5rem;
     padding-bottom: 5rem;
