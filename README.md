@@ -12,7 +12,7 @@ PlainCSS provides basic styles for typography and elements, flexbox based respon
 
 There are a few different ways you can include [**PlainCSS**](https://ilyadzh.github.io/plain-css) within your project. You can simply download the source file below or use NPM. PlainCSS is also available from CDN.
 
-* Source file: [Download](./dist/plain-ui.min.css)
+* Source file: [Download](./dist/plain.min.css)
 * Install with NPM: `npm install plain-css`
 * Install from CDN: `<link rel="stylesheet" href="https://unpkg.com/plain-ui@latest/dist/plain.min.css">`
 
@@ -22,7 +22,7 @@ Full documentation is provided on our website located at [PlainCSS](https://ilya
 
 ## Browser Support
 
-* **Chrome**            : LAST 2
+* **Chrome**            : ALL
 * **Firefox**           : 3.5+
 * **Safari**            : 3.2+
 * **Opera**             : 11+

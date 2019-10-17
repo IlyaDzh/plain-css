@@ -2,19 +2,23 @@
     "name": "plain-css",
     "version": "1.0.1",
     "description": "Simple CSS Framework",
-    "main": "index.js",
+    "main": "dist/plain.min.css",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "repository": {
+		"type": "git",
+		"url": "git+https://github.com/IlyaDzh/plain-css.git"
+	},
     "keywords": [
-        "plain",
-        "simple",
-        "css",
-        "ui",
-        "framework"
+        "CSS",
+		"CSS-framework",
+		"UI",
+        "Plain"
     ],
     "author": "Ilya D.",
-    "license": "ISC",
+    "license": "MIT",
+    "homepage": "https://github.com/IlyaDzh/plain-css#readme",
     "dependencies": {
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^7.0.1",
