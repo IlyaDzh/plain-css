@@ -5,6 +5,10 @@ hr {
     border-width: 1px 0 0;
 }
 
+p {
+    margin-bottom: 15px;
+}
+
 .pl-button {
     margin-bottom: 20px;
 }
@@ -247,6 +251,10 @@ pre span {
 
 .utilities-list li {
     margin-bottom: 3px;
+}
+
+.footer-version {
+    margin-top: 15px;
 }
 
 @media (min-width: 768px) {

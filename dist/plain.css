@@ -22,6 +22,8 @@
     font-family: var(--font-family);
     font-weight: 300;
     line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
 
 *,
@@ -108,6 +110,10 @@ select:focus,
 textarea:focus {
     border: 1px solid #1bad58;
     outline: none;
+}
+
+ul, ol {
+    list-style-type: none;
 }
 
 h1,
