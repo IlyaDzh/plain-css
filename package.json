@@ -1,6 +1,6 @@
 {
     "name": "plain-css",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Simple CSS Framework",
     "main": "dist/plain.min.css",
     "scripts": {
@@ -18,7 +18,9 @@
         "web",
         "responsive",
         "ui",
-        "clean"
+        "clean",
+        "front-end",
+        "bootstrap"
     ],
     "author": "Ilya D.",
     "license": "MIT",
